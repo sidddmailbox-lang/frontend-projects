@@ -7,37 +7,22 @@
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 color:white;
 }
 
-/* NAVBAR */
+/* BRAND LABEL */
 
-nav{
+.brand{
 position:fixed;
-top:0;
-width:100%;
-background:black;
-padding:15px;
-text-align:center;
+top:20px;
+left:25px;
+font-size:22px;
+letter-spacing:2px;
+font-weight:bold;
 z-index:1000;
-}
-
-nav a{
-color:white;
-margin:0 20px;
-text-decoration:none;
-font-size:16px;
-}
-
-nav a:hover{
-text-decoration:underline;
 }
 
 /* HERO SECTION */
@@ -78,11 +63,11 @@ button:hover{
 background:#eaeaea;
 }
 
-/* ABOUT SECTION */
+/* ABOUT */
 
 .about{
 background:#111;
-padding:100px 20px;
+padding:120px 20px;
 text-align:center;
 }
 
@@ -92,17 +77,18 @@ margin-bottom:20px;
 }
 
 .about p{
-max-width:600px;
+max-width:650px;
 margin:auto;
 font-size:18px;
 opacity:0.9;
+line-height:1.6;
 }
 
-/* CONTACT SECTION */
+/* CONTACT */
 
 .contact{
 background:#222;
-padding:100px 20px;
+padding:120px 20px;
 text-align:center;
 }
 
@@ -113,7 +99,7 @@ margin-bottom:20px;
 
 .contact a{
 color:white;
-font-size:20px;
+font-size:22px;
 text-decoration:none;
 }
 
@@ -142,13 +128,9 @@ alert("KnowBrand drop coming soon 🚀");
 
 <body>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+<div class="brand">KNOWBRAND</div>
 
-<section class="hero" id="home">
+<section class="hero">
 
 <div class="overlay">
 
@@ -162,23 +144,23 @@ alert("KnowBrand drop coming soon 🚀");
 
 </section>
 
-<section class="about" id="about">
+<section class="about">
 
 <h2>About KnowBrand</h2>
 
 <p>
-KnowBrand is a vision-driven clothing brand focused on identity, confidence,
-and street culture. Built for people who understand their value and express
-their individuality through style.
+KnowBrand is a vision-driven clothing brand built around identity,
+confidence, and street culture. The brand represents people who know
+their value and express themselves through what they wear.
 </p>
 
 </section>
 
-<section class="contact" id="contact">
+<section class="contact">
 
 <h2>Contact Us</h2>
 
-<p>Reach out to us directly</p>
+<p>Reach out directly</p>
 
 <a href="tel:9167878131">📞 9167878131</a>
 
