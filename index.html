@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Knowbrand</title>
 
 <style>
@@ -16,37 +18,6 @@ body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 color:white;
-}
-
-/* HERO BACKGROUND */
-
-#home{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px;
-
-background-image:url("https://images.unsplash.com/photo-1523381294911-8d3cead13475");
-background-size:cover;
-background-position:center;
-position:relative;
-}
-
-#home::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-}
-
-#home *{
-position:relative;
 }
 
 /* NAVBAR */
@@ -84,7 +55,38 @@ nav a:hover{
 opacity:0.7;
 }
 
-/* OTHER SECTIONS */
+/* HERO */
+
+#home{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+
+background-image:url("https://images.unsplash.com/photo-1523381294911-8d3cead13475");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+#home::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+#home *{
+position:relative;
+}
+
+/* SECTIONS */
 
 section{
 min-height:100vh;
@@ -124,7 +126,7 @@ button:hover{
 opacity:0.8;
 }
 
-/* CONTACT LINK FIX */
+/* CONTACT LINK */
 
 #contact a{
 color:white;
@@ -159,7 +161,46 @@ footer a:hover{
 opacity:0.7;
 }
 
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+padding:12px 0;
+}
+
+.logo{
+position:static;
+margin-bottom:8px;
+}
+
+nav a{
+margin:6px 10px;
+font-size:14px;
+}
+
+h1{
+font-size:34px;
+}
+
+p{
+font-size:15px;
+padding:0 10px;
+}
+
+section{
+padding:60px 20px;
+}
+
+button{
+padding:10px 24px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -226,4 +267,5 @@ Reach out for collaborations or inquiries.
 </footer>
 
 </body>
+
 </html>
