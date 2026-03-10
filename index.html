@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -29,9 +28,9 @@ color:white;
 line-height:1.5;
 }
 
-/* LOADER */
+/* INTRO SCREEN */
 
-#loader{
+#intro-screen{
 position:fixed;
 top:0;
 left:0;
@@ -39,15 +38,15 @@ width:100%;
 height:100%;
 background:black;
 display:flex;
-align-items:center;
 justify-content:center;
-z-index:2000;
+align-items:center;
+z-index:3000;
 }
 
-.loader-text{
-font-size:28px;
+#intro-screen h1{
+font-size:40px;
 letter-spacing:4px;
-animation:pulse 1.5s infinite;
+animation:pulse 2s infinite;
 }
 
 @keyframes pulse{
@@ -99,8 +98,6 @@ font-size:14px;
 position:relative;
 }
 
-/* HOVER */
-
 .navlinks a::after{
 content:"";
 position:absolute;
@@ -116,7 +113,7 @@ transition:0.3s;
 width:100%;
 }
 
-/* MOBILE MENU BUTTON */
+/* MOBILE MENU */
 
 .menu-btn{
 display:none;
@@ -215,7 +212,6 @@ overflow:hidden;
 border-radius:10px;
 cursor:pointer;
 transition:0.4s;
-
 opacity:0;
 transform:translateY(40px);
 }
@@ -250,7 +246,6 @@ font-size:14px;
 letter-spacing:1px;
 opacity:0;
 transition:0.3s;
-z-index:2;
 }
 
 .product-card:hover .product-name{
@@ -368,10 +363,14 @@ padding:60px 20px;
 
 <script>
 
-/* LOADER */
+/* INTRO SCREEN (3 seconds) */
 
 window.addEventListener("load",function(){
-document.getElementById("loader").style.display="none";
+
+setTimeout(function(){
+document.getElementById("intro-screen").style.display="none";
+},3000);
+
 });
 
 /* MOBILE MENU */
@@ -426,8 +425,8 @@ alert("Knowbrand is launching soon. Stay tuned.");
 
 <body>
 
-<div id="loader">
-<div class="loader-text">Knowbrand</div>
+<div id="intro-screen">
+<h1>Knowbrand</h1>
 </div>
 
 <nav>
