@@ -29,8 +29,8 @@ top:0;
 width:100%;
 background:black;
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:15px 40px;
 z-index:1000;
 box-sizing:border-box;
@@ -50,8 +50,8 @@ gap:25px;
 }
 
 .navlinks a{
-color:white;
 text-decoration:none;
+color:white;
 }
 
 /* HERO */
@@ -108,18 +108,23 @@ text-align:center;
 /* DROP SECTION */
 
 .drop-container{
-display:flex;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 gap:25px;
-flex-wrap:wrap;
+max-width:1100px;
+margin:auto;
 margin-top:40px;
 }
 
 .product-card{
-width:250px;
 background:#111;
 border-radius:10px;
 overflow:hidden;
+transition:0.3s;
+}
+
+.product-card:hover{
+transform:translateY(-6px);
 }
 
 .product-card img{
@@ -181,6 +186,8 @@ h1{
 font-size:32px;
 }
 
+/* remove hero image */
+
 #home{
 background:none;
 height:auto;
@@ -192,6 +199,20 @@ padding-bottom:60px;
 background:rgba(255,255,255,0.08);
 padding:20px;
 }
+
+/* product cards stack */
+
+.drop-container{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.product-card{
+max-width:400px;
+margin:auto;
+}
+
+/* instagram grid */
 
 .insta-grid{
 grid-template-columns:repeat(2,1fr);
@@ -244,18 +265,23 @@ Coming Soon
 <div class="drop-container">
 
 <div class="product-card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-<p>Knowbrand Tee</p>
+<img src="https://i.pinimg.com/736x/5f/9b/4c/5f9b4c3f43a2e2449c0923ff1ec8d976.jpg">
+<p>Jacket</p>
 </div>
 
 <div class="product-card">
-<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1">
-<p>Oversized Hoodie</p>
+<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
+<p>Button Ups</p>
 </div>
 
 <div class="product-card">
-<img src="https://images.unsplash.com/photo-1520975928316-56e61c8f2f1d">
-<p>Street Cap</p>
+<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
+<p>Pants</p>
+</div>
+
+<div class="product-card">
+<img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
+<p>Dresses</p>
 </div>
 
 </div>
@@ -270,12 +296,12 @@ Coming Soon
 
 <div class="insta-grid">
 
-<img src="https://images.unsplash.com/photo-1520975928316-56e61c8f2f1d">
-<img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
-<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
-<img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+<img src="https://i.pinimg.com/736x/5f/9b/4c/5f9b4c3f43a2e2449c0923ff1ec8d976.jpg">
+<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
+<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
+<img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
+<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
+<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
 
 </div>
 
