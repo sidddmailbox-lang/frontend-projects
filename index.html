@@ -18,6 +18,7 @@ body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 color:white;
+background:black;
 }
 
 /* NAVBAR */
@@ -29,14 +30,13 @@ width:100%;
 background:black;
 display:flex;
 align-items:center;
-justify-content:center;
-padding:15px 0;
+justify-content:space-between;
+padding:15px 40px;
+box-sizing:border-box;
 z-index:1000;
 }
 
 .logo{
-position:absolute;
-left:30px;
 font-weight:bold;
 letter-spacing:3px;
 font-size:18px;
@@ -44,31 +44,38 @@ text-decoration:none;
 color:white;
 }
 
-nav a{
+.navlinks{
+display:flex;
+gap:25px;
+}
+
+.navlinks a{
 color:white;
 text-decoration:none;
-margin:0 20px;
 font-size:16px;
 }
 
-nav a:hover{
+.navlinks a:hover{
 opacity:0.7;
 }
 
 /* HERO */
 
 #home{
-min-height:100vh;
+height:100vh;
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:40px;
+box-sizing:border-box;
 
 background-image:url("https://images.unsplash.com/photo-1523381294911-8d3cead13475");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
+
 position:relative;
 }
 
@@ -79,25 +86,14 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.55);
 }
 
 #home *{
 position:relative;
 }
 
-/* SECTIONS */
-
-section{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px;
-background:#111;
-}
+/* TEXT */
 
 h1{
 font-size:48px;
@@ -107,6 +103,7 @@ margin-bottom:10px;
 p{
 max-width:600px;
 line-height:1.6;
+font-size:18px;
 }
 
 /* BUTTON */
@@ -119,11 +116,24 @@ background:white;
 color:black;
 font-weight:bold;
 cursor:pointer;
-border-radius:5px;
+border-radius:6px;
 }
 
 button:hover{
-opacity:0.8;
+opacity:0.85;
+}
+
+/* SECTIONS */
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:80px 20px;
+background:#111;
 }
 
 /* CONTACT */
@@ -134,60 +144,54 @@ text-decoration:none;
 font-weight:bold;
 }
 
-#contact a:hover{
-opacity:0.7;
-}
-
 /* FOOTER */
 
 footer{
 background:black;
-padding:30px;
+padding:30px 20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
 text-align:center;
 }
 
 footer p{
-margin:5px 0;
+margin:6px 0;
 }
 
 footer a{
 color:white;
 text-decoration:none;
-font-weight:bold;
-margin:0 5px;
+margin:0 6px;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 
 @media (max-width:768px){
 
 nav{
-justify-content:space-between;
-padding:12px 15px;
+padding:12px 20px;
 }
 
 .logo{
-position:static;
 font-size:16px;
 }
 
-nav div{
-display:flex;
+.navlinks{
 gap:15px;
 }
 
-nav a{
-margin:0;
+.navlinks a{
 font-size:14px;
 }
 
 #home{
-min-height:70vh;
-background-position:center top;
+height:90vh;
 }
 
 h1{
-font-size:34px;
+font-size:32px;
 }
 
 p{
@@ -211,7 +215,7 @@ padding:10px 22px;
 
 <a href="#home" class="logo">KNOWBRAND</a>
 
-<div>
+<div class="navlinks">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
@@ -238,9 +242,7 @@ Coming Soon
 <h1>About</h1>
 
 <p>
-Knowbrand is a clothing label focused on simplicity, identity,
-and bold expression. The goal is to create clothing that represents
-individuality and culture.
+Knowbrand is a clothing label focused on simplicity, identity, and bold expression.
 </p>
 
 </section>
@@ -249,9 +251,7 @@ individuality and culture.
 
 <h1>Contact</h1>
 
-<p>
-Reach out for collaborations or inquiries.
-</p>
+<p>Reach out for collaborations or inquiries.</p>
 
 <p>
 <a href="tel:9167878131">Call: 9167878131</a>
