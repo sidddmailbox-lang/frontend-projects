@@ -36,7 +36,6 @@ justify-content:space-between;
 align-items:center;
 padding:18px 60px;
 z-index:1000;
-
 background:rgba(0,0,0,0.6);
 backdrop-filter:blur(10px);
 }
@@ -51,17 +50,14 @@ display:flex;
 gap:30px;
 }
 
-/* NAV LINKS */
-
 .navlinks a{
 color:white;
 text-decoration:none;
 font-size:14px;
 position:relative;
-transition:0.3s;
 }
 
-/* PREMIUM HOVER EFFECT */
+/* PREMIUM NAV HOVER */
 
 .navlinks a::after{
 content:"";
@@ -78,10 +74,9 @@ transition:0.3s;
 width:100%;
 }
 
-/* HERO */
+/* HERO DESKTOP */
 
 #home{
-
 height:90vh;
 
 background:
@@ -95,9 +90,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-
 padding:20px;
-
 }
 
 .hero-box{
@@ -115,8 +108,6 @@ margin-bottom:10px;
 .hero-box p{
 margin-bottom:20px;
 }
-
-/* BUTTON */
 
 button{
 padding:10px 22px;
@@ -138,11 +129,11 @@ margin-bottom:30px;
 font-size:24px;
 }
 
-/* DROP GRID */
+/* DROP GRID DESKTOP */
 
 .drop-container{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
@@ -164,17 +155,13 @@ transition:0.4s;
 transform:scale(1.08);
 }
 
-/* HOVER PRODUCT NAME */
-
 .product-name{
 position:absolute;
 bottom:0;
 left:0;
 width:100%;
 padding:12px;
-
 background:rgba(0,0,0,0.65);
-
 text-align:center;
 opacity:0;
 transition:0.3s;
@@ -194,24 +181,27 @@ gap:10px;
 
 .insta-grid img{
 width:100%;
-height:200px;
+height:220px;
 object-fit:cover;
 }
 
-/* ABOUT */
+/* ABOUT + CONTACT MERGED */
 
-.about{
+.about-contact{
 padding:80px 60px;
+max-width:800px;
 }
 
-/* CONTACT */
-
-.contact{
-padding:80px 60px;
+.about-contact h2{
+margin-bottom:20px;
 }
 
-.contact p{
-margin:8px 0;
+.contact-info{
+margin-top:20px;
+}
+
+.contact-info p{
+margin:6px 0;
 }
 
 /* FOOTER */
@@ -260,14 +250,9 @@ align-items:center;
 justify-content:center;
 
 padding:20px;
-
 }
 
-.hero-box{
-padding:20px;
-}
-
-/* DROP GRID MOBILE */
+/* DROP MOBILE */
 
 .drop-container{
 grid-template-columns:1fr 1fr;
@@ -278,10 +263,14 @@ gap:15px;
 height:200px;
 }
 
-/* INSTAGRAM GRID MOBILE */
+/* INSTAGRAM MOBILE */
 
 .insta-grid{
 grid-template-columns:1fr 1fr;
+}
+
+.about-contact{
+padding:60px 20px;
 }
 
 }
@@ -289,11 +278,9 @@ grid-template-columns:1fr 1fr;
 </style>
 
 <script>
-
 function comingSoon(){
 alert("Knowbrand is launching soon. Stay tuned.");
 }
-
 </script>
 
 </head>
@@ -307,11 +294,10 @@ alert("Knowbrand is launching soon. Stay tuned.");
 <div class="navlinks">
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#about">Contact</a>
 </div>
 
 </nav>
-
 
 <section id="home">
 
@@ -322,7 +308,6 @@ alert("Knowbrand is launching soon. Stay tuned.");
 </div>
 
 </section>
-
 
 <section class="section">
 
@@ -354,7 +339,6 @@ alert("Knowbrand is launching soon. Stay tuned.");
 
 </section>
 
-
 <section class="section">
 
 <h2>Instagram</h2>
@@ -366,32 +350,30 @@ alert("Knowbrand is launching soon. Stay tuned.");
 <img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
 <img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
 
+<img src="https://i.pinimg.com/736x/5f/9b/4c/5f9b4c3f43a2e2449c0923ff1ec8d976.jpg">
+<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
+<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
+<img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
+
 </div>
 
 </section>
 
+<section id="about" class="about-contact">
 
-<section id="about" class="about">
-
-<h2>About</h2>
+<h2>About Knowbrand</h2>
 
 <p>
-Knowbrand is a modern clothing label focused on identity,
-creative expression and minimal fashion.
+Knowbrand is a modern clothing label focused on identity, creativity and minimal fashion.
+We design pieces that reflect personality rather than trends.
 </p>
 
-</section>
-
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
+<div class="contact-info">
 <p>Phone — 9167878131</p>
 <p>Email — knowbrandcare.com</p>
+</div>
 
 </section>
-
 
 <footer>
 
