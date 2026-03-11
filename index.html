@@ -361,8 +361,6 @@ padding:60px 20px;
 
 <script>
 
-/* INTRO */
-
 window.addEventListener("load",function(){
 
 setTimeout(function(){
@@ -371,14 +369,10 @@ document.getElementById("intro-screen").style.display="none";
 
 });
 
-/* MOBILE MENU */
-
 function toggleMenu(){
 const nav=document.getElementById("navlinks");
 nav.classList.toggle("active");
 }
-
-/* NAVBAR SCROLL */
 
 window.addEventListener("scroll",function(){
 
@@ -391,8 +385,6 @@ nav.classList.remove("scrolled");
 }
 
 });
-
-/* REVEAL PRODUCTS */
 
 window.addEventListener("scroll",function(){
 
@@ -410,8 +402,6 @@ card.classList.add("show");
 });
 
 });
-
-/* BUTTON */
 
 function comingSoon(){
 alert("Knowbrand is launching soon. Stay tuned.");
@@ -439,8 +429,9 @@ alert("Knowbrand is launching soon. Stay tuned.");
 <a href="#drop">Drop</a>
 <a href="#instagram">Instagram</a>
 <a href="#about">About</a>
-<a href="about.html">Full About</a>
-<a href="contact.html">Contact</a>
+
+<a href="/about/">Full About</a>
+<a href="/contact/">Contact</a>
 
 </div>
 
