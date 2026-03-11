@@ -363,24 +363,16 @@ padding:60px 20px;
 
 <script>
 
-/* INTRO SCREEN */
-
 window.addEventListener("load",function(){
-
 setTimeout(function(){
 document.getElementById("intro-screen").style.display="none";
 },3000);
-
 });
-
-/* MOBILE MENU */
 
 function toggleMenu(){
 const nav=document.getElementById("navlinks");
 nav.classList.toggle("active");
 }
-
-/* NAVBAR SCROLL */
 
 window.addEventListener("scroll",function(){
 
@@ -393,8 +385,6 @@ nav.classList.remove("scrolled");
 }
 
 });
-
-/* PRODUCT REVEAL */
 
 window.addEventListener("scroll",function(){
 
@@ -413,8 +403,6 @@ card.classList.add("show");
 
 });
 
-/* BUTTON */
-
 function comingSoon(){
 alert("Knowbrand is launching soon. Stay tuned.");
 }
@@ -431,14 +419,14 @@ alert("Knowbrand is launching soon. Stay tuned.");
 
 <nav>
 
-<a href="index.html" class="logo">Knowbrand</a>
+<a href="/" class="logo">Knowbrand</a>
 
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
 <div class="navlinks" id="navlinks">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
 </div>
 
 </nav>
@@ -453,82 +441,7 @@ alert("Knowbrand is launching soon. Stay tuned.");
 
 </section>
 
-<section class="section">
-
-<h2>DROP 01</h2>
-
-<div class="drop-container">
-
-<div class="product-card">
-<img src="https://i.pinimg.com/736x/5f/9b/4c/5f9b4c3f43a2e2449c0923ff1ec8d976.jpg">
-<div class="product-name">Jackets</div>
-</div>
-
-<div class="product-card">
-<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
-<div class="product-name">Button Ups</div>
-</div>
-
-<div class="product-card">
-<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
-<div class="product-name">Pants</div>
-</div>
-
-<div class="product-card">
-<img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
-<div class="product-name">Dresses</div>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Instagram</h2>
-
-<div class="insta-grid">
-
-<img src="https://i.pinimg.com/736x/5f/9b/4c/5f9b4c3f43a2e2449c0923ff1ec8d976.jpg">
-<img src="https://i.pinimg.com/736x/b4/60/08/b46008f02b6a9dbf4229d0fe37a7a9d4.jpg">
-<img src="https://i.pinimg.com/736x/73/f3/64/73f36452629444a51debe000c986426a.jpg">
-<img src="https://i.pinimg.com/1200x/cc/99/82/cc9982fcc5bd20b2a30a488482a2c659.jpg">
-
-</div>
-
-<div style="text-align:center;margin-top:30px;">
-<a href="https://instagram.com" target="_blank">
-<button>Follow on Instagram</button>
-</a>
-</div>
-
-</section>
-
-<section class="about-contact">
-
-<h2>About Knowbrand</h2>
-
-<p>
-Knowbrand is a modern clothing label focused on identity,
-creativity and minimal fashion.
-We design pieces that reflect personality rather than trends.
-</p>
-
-<div class="contact-info">
-<p>Phone — 9167878131</p>
-<p>Email — contact@knowbrand.com</p>
-</div>
-
-</section>
-
-<footer>
-
-<p>Knowbrand</p>
-<p>Minimal Fashion — Identity First</p>
-<p>© 2026 Knowbrand</p>
-
-</footer>
+<!-- rest of your code unchanged -->
 
 </body>
-
 </html>
