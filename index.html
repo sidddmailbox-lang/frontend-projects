@@ -362,11 +362,9 @@ padding:60px 20px;
 <script>
 
 window.addEventListener("load",function(){
-
 setTimeout(function(){
 document.getElementById("intro-screen").style.display="none";
 },3000);
-
 });
 
 function toggleMenu(){
@@ -375,7 +373,6 @@ nav.classList.toggle("active");
 }
 
 window.addEventListener("scroll",function(){
-
 const nav=document.querySelector("nav");
 
 if(window.scrollY>50){
@@ -383,24 +380,19 @@ nav.classList.add("scrolled");
 }else{
 nav.classList.remove("scrolled");
 }
-
 });
 
 window.addEventListener("scroll",function(){
-
 const cards=document.querySelectorAll(".product-card");
 
 cards.forEach(card=>{
-
 const position=card.getBoundingClientRect().top;
 const screen=window.innerHeight;
 
 if(position < screen - 100){
 card.classList.add("show");
 }
-
 });
-
 });
 
 function comingSoon(){
@@ -419,16 +411,16 @@ alert("Knowbrand is launching soon. Stay tuned.");
 
 <nav>
 
-<a href="#home" class="logo">Knowbrand</a>
+<a href="/" class="logo">Knowbrand</a>
 
 <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
 <div class="navlinks" id="navlinks">
 
-<a href="#home">Home</a>
-<a href="#drop">Drop</a>
-<a href="#instagram">Instagram</a>
-<a href="#about">About</a>
+<a href="/">Home</a>
+<a href="/#drop">Drop</a>
+<a href="/#instagram">Instagram</a>
+<a href="/#about">About</a>
 
 <a href="/about/">Full About</a>
 <a href="/contact/">Contact</a>
